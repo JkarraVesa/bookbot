@@ -1,3 +1,7 @@
+#SCRATCH PAPER DO NOT USE
+
+
+
 #FUNCTION HOLDING AREA
 
 #GET BOOK TEXT FUNCTION
@@ -13,7 +17,7 @@ def get_book_text(book):
 
 def wordcount(text):
     words = text.split()
-    return (f"Found {len(words)} total words")
+    return (f"{len(words)} words found in the document")
 
 #COUNT LETTERS FUNCTION
 
