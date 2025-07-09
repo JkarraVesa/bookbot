@@ -1,10 +1,17 @@
 #HEADER AND FOOTER
-book = "/home/jkarra/Bootdev/bookbot/books/frankenstein.txt"
+
+import sys
+
+if len(sys.argv) != 2:
+    print("Usage: python3 main.py <path_to_book>") 
+    sys.exit(1)
+
+book = sys.argv[1]
 
 from stats import get_book_text, wordcount, character_frequency, s_char_freq
 text = get_book_text(book)
-print('''============ BOOKBOT ============
-Analyzing book found at books/frankenstein.txt...
+print(f'''============ BOOKBOT ============
+Analyzing book found at {book}
 ----------- Word Count ----------''')
 print(wordcount(text))
 print("--------- Character Count -------")
